@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Driver Profit</string>
+
+    <string name="dashboard_title">Lucro do Motorista</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Bem-vindo</string>
+    <string name="onboarding_subtitle">Escolha seu idioma, moeda e unidades. Você pode alterá-los depois em Ajustes.</string>
+    <string name="onboarding_continue">Continuar</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Início</string>
+    <string name="nav_calculator">Calculadora</string>
+    <string name="nav_history">Histórico</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <!-- Units -->
+    <string name="unit_km">km</string>
+    <string name="unit_mi">mi</string>
+    <string name="unit_l">L</string>
+    <string name="unit_gal">gal</string>
+    <string name="unit_h">h</string>
+
+    <!-- Common -->
+    <string name="action_save">Salvar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_ok">OK</string>
+    <string name="action_back">Voltar</string>
+    <string name="platform_other">Outra</string>
+
+    <!-- Dashboard -->
+    <string name="period_today">Hoje</string>
+    <string name="period_week">Esta semana</string>
+    <string name="period_month">Este mês</string>
+    <string name="label_net">Lucro líquido</string>
+    <string name="label_gross">Bruto</string>
+    <string name="label_expenses">Despesas</string>
+    <string name="label_distance">Distância</string>
+    <string name="label_hours">Horas</string>
+    <string name="label_gross_per_distance">Bruto por %1$s</string>
+    <string name="label_gross_per_hour">Bruto por hora</string>
+    <string name="dashboard_platforms">Por plataforma</string>
+    <string name="dashboard_empty">Nenhum registro neste período ainda. Toque em + para adicionar seu dia.</string>
+    <string name="add_entry">Adicionar dia</string>
+
+    <!-- Entry form -->
+    <string name="entry_title_new">Novo registro</string>
+    <string name="entry_title_edit">Editar registro</string>
+    <string name="field_date">Data</string>
+    <string name="field_platform">Plataforma</string>
+    <string name="field_gross">Ganhos brutos</string>
+    <string name="field_distance">Distância (%1$s)</string>
+    <string name="field_hours">Horas trabalhadas</string>
+    <string name="field_fuel">Gasto com combustível</string>
+    <string name="field_other">Outras despesas</string>
+    <string name="delete_confirm">Excluir este registro?</string>
+
+    <!-- Calculator -->
+    <string name="calc_title">A corrida vale a pena?</string>
+    <string name="calc_hint">Digite a oferta para ver o resultado. Defina seus custos e mínimos em Ajustes.</string>
+    <string name="calc_fare">Valor oferecido</string>
+    <string name="calc_distance">Distância da corrida (%1$s)</string>
+    <string name="calc_pickup">Distância até o embarque (%1$s, opcional)</string>
+    <string name="calc_minutes">Tempo total (minutos)</string>
+    <string name="calc_per_distance">Por %1$s</string>
+    <string name="calc_per_hour">Por hora</string>
+    <string name="calc_cost">Custo estimado</string>
+    <string name="calc_net">Lucro líquido</string>
+    <string name="calc_margin">Margem</string>
+    <string name="verdict_green">Vale a pena</string>
+    <string name="verdict_yellow">No limite</string>
+    <string name="verdict_red">Recuse</string>
+
+    <!-- History -->
+    <string name="history_empty">Nenhum registro ainda.</string>
+    <string name="history_export">Exportar CSV</string>
+    <string name="export_chooser">Exportar registros</string>
+    <string name="history_item_detail">%1$s %2$s · %3$s h</string>
+
+    <!-- Settings -->
+    <string name="settings_language">Idioma</string>
+    <string name="language_system">Padrão do sistema</string>
+    <string name="settings_currency">Moeda</string>
+    <string name="settings_units">Unidades</string>
+    <string name="units_metric">Quilômetros e litros</string>
+    <string name="units_imperial">Milhas e galões</string>
+    <string name="settings_costs">Custos do veículo</string>
+    <string name="settings_fuel_price">Preço do combustível (por %1$s)</string>
+    <string name="settings_efficiency">Consumo (%1$s por %2$s)</string>
+    <string name="settings_maintenance">Manutenção e desgaste (por %1$s)</string>
+    <string name="settings_real_cost">Custo real: %1$s por %2$s</string>
+    <string name="settings_minimums">Seus mínimos</string>
+    <string name="settings_min_per_distance">Mínimo por %1$s</string>
+    <string name="settings_min_per_hour">Mínimo por hora</string>
+</resources>

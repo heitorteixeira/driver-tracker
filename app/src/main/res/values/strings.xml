@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Driver Profit</string>
+
+    <string name="dashboard_title">Driver Profit</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Welcome</string>
+    <string name="onboarding_subtitle">Choose your language, currency and units. You can change them later in Settings.</string>
+    <string name="onboarding_continue">Continue</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Home</string>
+    <string name="nav_calculator">Calculator</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Units -->
+    <string name="unit_km">km</string>
+    <string name="unit_mi">mi</string>
+    <string name="unit_l">L</string>
+    <string name="unit_gal">gal</string>
+    <string name="unit_h">h</string>
+
+    <!-- Common -->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_back">Back</string>
+    <string name="platform_other">Other</string>
+
+    <!-- Dashboard -->
+    <string name="period_today">Today</string>
+    <string name="period_week">This week</string>
+    <string name="period_month">This month</string>
+    <string name="label_net">Net profit</string>
+    <string name="label_gross">Gross</string>
+    <string name="label_expenses">Expenses</string>
+    <string name="label_distance">Distance</string>
+    <string name="label_hours">Hours</string>
+    <string name="label_gross_per_distance">Gross per %1$s</string>
+    <string name="label_gross_per_hour">Gross per hour</string>
+    <string name="dashboard_platforms">By platform</string>
+    <string name="dashboard_empty">No entries in this period yet. Tap + to add your day.</string>
+    <string name="add_entry">Add day</string>
+
+    <!-- Entry form -->
+    <string name="entry_title_new">New entry</string>
+    <string name="entry_title_edit">Edit entry</string>
+    <string name="field_date">Date</string>
+    <string name="field_platform">Platform</string>
+    <string name="field_gross">Gross earnings</string>
+    <string name="field_distance">Distance (%1$s)</string>
+    <string name="field_hours">Hours worked</string>
+    <string name="field_fuel">Fuel expense</string>
+    <string name="field_other">Other expenses</string>
+    <string name="delete_confirm">Delete this entry?</string>
+
+    <!-- Calculator -->
+    <string name="calc_title">Is this ride worth it?</string>
+    <string name="calc_hint">Enter the offer to see the result. Set your costs and minimums in Settings.</string>
+    <string name="calc_fare">Fare offered</string>
+    <string name="calc_distance">Trip distance (%1$s)</string>
+    <string name="calc_pickup">Pickup distance (%1$s, optional)</string>
+    <string name="calc_minutes">Total time (minutes)</string>
+    <string name="calc_per_distance">Per %1$s</string>
+    <string name="calc_per_hour">Per hour</string>
+    <string name="calc_cost">Estimated cost</string>
+    <string name="calc_net">Net profit</string>
+    <string name="calc_margin">Margin</string>
+    <string name="verdict_green">Worth it</string>
+    <string name="verdict_yellow">Borderline</string>
+    <string name="verdict_red">Skip it</string>
+
+    <!-- History -->
+    <string name="history_empty">No entries yet.</string>
+    <string name="history_export">Export CSV</string>
+    <string name="export_chooser">Export entries</string>
+    <string name="history_item_detail">%1$s %2$s · %3$s h</string>
+
+    <!-- Settings -->
+    <string name="settings_language">Language</string>
+    <string name="language_system">System default</string>
+    <string name="settings_currency">Currency</string>
+    <string name="settings_units">Units</string>
+    <string name="units_metric">Kilometers and liters</string>
+    <string name="units_imperial">Miles and gallons</string>
+    <string name="settings_costs">Vehicle costs</string>
+    <string name="settings_fuel_price">Fuel price (per %1$s)</string>
+    <string name="settings_efficiency">Efficiency (%1$s per %2$s)</string>
+    <string name="settings_maintenance">Maintenance and wear (per %1$s)</string>
+    <string name="settings_real_cost">Real cost: %1$s per %2$s</string>
+    <string name="settings_minimums">Your minimums</string>
+    <string name="settings_min_per_distance">Minimum per %1$s</string>
+    <string name="settings_min_per_hour">Minimum per hour</string>
+</resources>
