@@ -80,7 +80,13 @@ fun DashboardScreen(entries: List<DayEntry>, settings: Settings, onAdd: () -> Un
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding),
-            contentPadding = PaddingValues(16.dp),
+            // Extra bottom space so the floating + button never covers the last item.
+            contentPadding = PaddingValues(
+                start = 16.dp,
+                top = 16.dp,
+                end = 16.dp,
+                bottom = 16.dp + 56.dp + 16.dp,
+            ),
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             item {

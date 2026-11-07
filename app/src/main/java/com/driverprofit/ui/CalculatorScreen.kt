@@ -73,6 +73,15 @@ fun CalculatorScreen(settings: Settings) {
             NumberField(stringResource(R.string.calc_minutes), minutes, { minutes = it })
 
             if (result == null) {
+                // Fuel spend only needs the distance, so show it before the rest is filled in.
+                val totalDistance = (distance.toDecimal() ?: 0.0) + (pickup.toDecimal() ?: 0.0)
+                if (totalDistance > 0) {
+                    StatCard(
+                        stringResource(R.string.calc_fuel_cost),
+                        fmt.money(totalDistance * settings.profile.fuelCostPerDistance),
+                        Modifier.fillMaxWidth(),
+                    )
+                }
                 Text(
                     stringResource(R.string.calc_hint),
                     style = MaterialTheme.typography.bodyMedium,
@@ -115,10 +124,17 @@ fun CalculatorScreen(settings: Settings) {
                 }
                 Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     StatCard(
+                        stringResource(R.string.calc_fuel_cost),
+                        fmt.money(result.fuelCost),
+                        Modifier.weight(1f),
+                    )
+                    StatCard(
                         stringResource(R.string.calc_cost),
                         fmt.money(result.cost),
                         Modifier.weight(1f),
                     )
+                }
+                Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     StatCard(
                         stringResource(R.string.calc_margin),
                         fmt.percent(result.margin),

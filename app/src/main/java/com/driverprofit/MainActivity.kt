@@ -34,6 +34,7 @@ import com.driverprofit.ui.CalculatorScreen
 import com.driverprofit.ui.DashboardScreen
 import com.driverprofit.ui.DriverProfitTheme
 import com.driverprofit.ui.EntryScreen
+import com.driverprofit.ui.FeedbackScreen
 import com.driverprofit.ui.HistoryScreen
 import com.driverprofit.ui.OnboardingScreen
 import com.driverprofit.ui.SettingsScreen
@@ -114,7 +115,14 @@ private fun AppRoot(vm: AppViewModel = viewModel()) {
                     onOpen = { id -> nav.navigate("entry/$id") },
                 )
             }
-            composable("settings") { SettingsScreen(s, onChange = vm::saveSettings) }
+            composable("settings") {
+                SettingsScreen(
+                    s,
+                    onChange = vm::saveSettings,
+                    onOpenFeedback = { nav.navigate("feedback") },
+                )
+            }
+            composable("feedback") { FeedbackScreen(onBack = { nav.popBackStack() }) }
             composable(
                 route = "entry/{id}",
                 arguments = listOf(navArgument("id") { type = NavType.LongType }),

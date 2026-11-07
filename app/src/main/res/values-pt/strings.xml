@@ -13,6 +13,7 @@
     <string name="nav_dashboard">Início</string>
     <string name="nav_calculator">Calculadora</string>
     <string name="nav_history">Histórico</string>
+    <string name="nav_feedback">Sugestões</string>
     <string name="nav_settings">Ajustes</string>
 
     <!-- Units -->
@@ -66,6 +67,7 @@
     <string name="calc_minutes">Tempo total (minutos)</string>
     <string name="calc_per_distance">Por %1$s</string>
     <string name="calc_per_hour">Por hora</string>
+    <string name="calc_fuel_cost">Gasto com combustível</string>
     <string name="calc_cost">Custo estimado</string>
     <string name="calc_net">Lucro líquido</string>
     <string name="calc_margin">Margem</string>
@@ -94,4 +96,13 @@
     <string name="settings_minimums">Seus mínimos</string>
     <string name="settings_min_per_distance">Mínimo por %1$s</string>
     <string name="settings_min_per_hour">Mínimo por hora</string>
+
+    <!-- Feedback -->
+    <string name="settings_feedback">Enviar sugestões ou ideias de funcionalidades</string>
+    <string name="feedback_intro">Sentiu falta de algo ou tem uma ideia? Conte o que tornaria este app mais útil para você.</string>
+    <string name="feedback_hint">Sua sugestão ou funcionalidade desejada</string>
+    <string name="feedback_send">Enviar por e-mail</string>
+    <string name="feedback_subject">Sugestão para o Driver Profit</string>
+    <string name="feedback_chooser">Enviar sugestão</string>
+    <string name="feedback_no_email_app">Nenhum app de e-mail encontrado neste dispositivo.</string>
 </resources>

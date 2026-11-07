@@ -5,14 +5,21 @@ package com.driverprofit.ui
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -38,7 +45,11 @@ internal val CURRENCIES = listOf(
 internal val LANGUAGES = listOf("en" to "English", "es" to "Español", "pt" to "Português")
 
 @Composable
-fun SettingsScreen(settings: Settings, onChange: (Settings) -> Unit) {
+fun SettingsScreen(
+    settings: Settings,
+    onChange: (Settings) -> Unit,
+    onOpenFeedback: () -> Unit,
+) {
     val locale = LocalConfiguration.current.locales[0]
     val fmt = rememberFmt(settings.currencyCode)
     val dist = distanceUnit(settings.metric)
@@ -158,6 +169,15 @@ fun SettingsScreen(settings: Settings, onChange: (Settings) -> Unit) {
                 minHour,
                 { minHour = it; pushProfile() },
             )
+
+            OutlinedButton(
+                onClick = onOpenFeedback,
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                Icon(Icons.Default.Email, contentDescription = null)
+                Spacer(Modifier.width(8.dp))
+                Text(stringResource(R.string.settings_feedback))
+            }
         }
     }
 }

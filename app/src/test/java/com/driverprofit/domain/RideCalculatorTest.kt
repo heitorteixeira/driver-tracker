@@ -51,6 +51,8 @@ class RideCalculatorTest {
         // 20 for 8 km trip + 4 km pickup: total 12 km, cost 12, net 8
         val result = RideCalculator.evaluate(RideOffer(20.0, 8.0, 4.0, 30.0), profile)
         assertEquals(12.0, result!!.cost, 1e-9)
+        // fuel is 0.6 per km (6.0 / 10.0) over 12 km; the other 0.4 per km is maintenance
+        assertEquals(7.2, result.fuelCost, 1e-9)
         assertEquals(8.0, result.net, 1e-9)
         assertEquals(20.0 / 12.0, result.perDistance, 1e-9)
     }

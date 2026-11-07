@@ -13,8 +13,12 @@ data class CostProfile(
     val minPerDistance: Double,
     val minPerHour: Double,
 ) {
+    /** Fuel spend per distance unit (fuel price / efficiency). */
+    val fuelCostPerDistance: Double
+        get() = if (efficiency > 0) fuelPrice / efficiency else 0.0
+
     val costPerDistance: Double
-        get() = (if (efficiency > 0) fuelPrice / efficiency else 0.0) + maintenancePerDistance
+        get() = fuelCostPerDistance + maintenancePerDistance
 }
 
 data class RideOffer(
@@ -28,6 +32,8 @@ data class RideResult(
     val perDistance: Double,
     val perHour: Double,
     val cost: Double,
+    /** The fuel part of [cost]; the rest is maintenance and wear. */
+    val fuelCost: Double,
     val net: Double,
     val margin: Double,
     val verdict: Verdict,
@@ -54,6 +60,7 @@ object RideCalculator {
             perDistance = perDistance,
             perHour = perHour,
             cost = cost,
+            fuelCost = totalDistance * profile.fuelCostPerDistance,
             net = net,
             margin = net / offer.fare,
             verdict = verdict,
