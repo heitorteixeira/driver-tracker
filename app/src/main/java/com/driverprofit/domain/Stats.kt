@@ -1,6 +1,6 @@
-package com.heitor.driverprofit.domain
+package com.driverprofit.domain
 
-import com.heitor.driverprofit.data.DayEntry
+import com.driverprofit.data.DayEntry
 
 data class Stats(
     val gross: Double,

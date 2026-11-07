@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.heitor.driverprofit"
+    namespace = "com.driverprofit"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.heitor.driverprofit"
+        applicationId = "com.driverprofit"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

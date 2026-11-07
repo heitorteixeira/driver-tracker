@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.data
+package com.driverprofit.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.Arrangement
@@ -26,8 +26,8 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.os.LocaleListCompat
-import com.heitor.driverprofit.R
-import com.heitor.driverprofit.data.Settings
+import com.driverprofit.R
+import com.driverprofit.data.Settings
 import java.util.Currency
 
 /**
@@ -40,9 +40,16 @@ fun OnboardingScreen(initial: Settings, onDone: (Settings) -> Unit) {
     var currency by rememberSaveable { mutableStateOf(initial.currencyCode) }
     var metric by rememberSaveable { mutableStateOf(initial.metric) }
 
-    // Show the language actually in effect (explicit choice or the system's, if supported).
+    // Show the language actually in effect: an explicit choice, otherwise the first of the
+    // phone's preferred languages that the app supports (English if none), like Android does.
     val explicit = AppCompatDelegate.getApplicationLocales().toLanguageTags().substringBefore('-')
-    val currentLanguage = explicit.ifEmpty { locale.language }
+    val systemLocales = LocalConfiguration.current.locales
+    val currentLanguage = explicit.ifEmpty {
+        (0 until systemLocales.size())
+            .map { systemLocales[it].language }
+            .firstOrNull { lang -> LANGUAGES.any { it.first == lang } }
+            ?: LANGUAGES.first().first
+    }
     val languageLabel = LANGUAGES.firstOrNull { it.first == currentLanguage }?.second
         ?: LANGUAGES.first().second
 

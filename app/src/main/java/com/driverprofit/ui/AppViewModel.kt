@@ -1,12 +1,12 @@
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.heitor.driverprofit.data.AppDatabase
-import com.heitor.driverprofit.data.DayEntry
-import com.heitor.driverprofit.data.Settings
-import com.heitor.driverprofit.data.SettingsStore
+import com.driverprofit.data.AppDatabase
+import com.driverprofit.data.DayEntry
+import com.driverprofit.data.Settings
+import com.driverprofit.data.SettingsStore
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn

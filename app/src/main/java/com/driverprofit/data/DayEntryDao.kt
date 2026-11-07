@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.data
+package com.driverprofit.data
 
 import androidx.room.Dao
 import androidx.room.Query

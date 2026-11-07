@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.domain
+package com.driverprofit.domain
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull

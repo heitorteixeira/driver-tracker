@@ -1,4 +1,4 @@
-package com.heitor.driverprofit
+package com.driverprofit
 
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -29,14 +29,14 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.heitor.driverprofit.ui.AppViewModel
-import com.heitor.driverprofit.ui.CalculatorScreen
-import com.heitor.driverprofit.ui.DashboardScreen
-import com.heitor.driverprofit.ui.DriverProfitTheme
-import com.heitor.driverprofit.ui.EntryScreen
-import com.heitor.driverprofit.ui.HistoryScreen
-import com.heitor.driverprofit.ui.OnboardingScreen
-import com.heitor.driverprofit.ui.SettingsScreen
+import com.driverprofit.ui.AppViewModel
+import com.driverprofit.ui.CalculatorScreen
+import com.driverprofit.ui.DashboardScreen
+import com.driverprofit.ui.DriverProfitTheme
+import com.driverprofit.ui.EntryScreen
+import com.driverprofit.ui.HistoryScreen
+import com.driverprofit.ui.OnboardingScreen
+import com.driverprofit.ui.SettingsScreen
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

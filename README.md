@@ -38,7 +38,7 @@ per hour     = fare / (minutes / 60)
 ## Project structure
 
 ```
-app/src/main/java/com/heitor/driverprofit/
+app/src/main/java/com/driverprofit/
 ├── MainActivity.kt        # Navigation and bottom bar
 ├── data/                  # Room database, DAO, DataStore settings
 ├── domain/                # Ride calculator, stats, platforms (pure Kotlin)

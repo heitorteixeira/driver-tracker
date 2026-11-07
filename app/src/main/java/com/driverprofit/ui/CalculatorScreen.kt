@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -27,11 +27,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.heitor.driverprofit.R
-import com.heitor.driverprofit.data.Settings
-import com.heitor.driverprofit.domain.RideCalculator
-import com.heitor.driverprofit.domain.RideOffer
-import com.heitor.driverprofit.domain.Verdict
+import com.driverprofit.R
+import com.driverprofit.data.Settings
+import com.driverprofit.domain.RideCalculator
+import com.driverprofit.domain.RideOffer
+import com.driverprofit.domain.Verdict
 
 @Composable
 fun CalculatorScreen(settings: Settings) {

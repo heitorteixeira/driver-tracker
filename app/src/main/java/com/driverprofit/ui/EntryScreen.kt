@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -37,10 +37,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.heitor.driverprofit.R
-import com.heitor.driverprofit.data.DayEntry
-import com.heitor.driverprofit.data.Settings
-import com.heitor.driverprofit.domain.Platform
+import com.driverprofit.R
+import com.driverprofit.data.DayEntry
+import com.driverprofit.data.Settings
+import com.driverprofit.domain.Platform
 import java.time.LocalDate
 
 private const val MILLIS_PER_DAY = 86_400_000L

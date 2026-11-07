@@ -1,10 +1,10 @@
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import android.content.Context
 import android.content.Intent
 import androidx.core.content.FileProvider
-import com.heitor.driverprofit.data.DayEntry
-import com.heitor.driverprofit.domain.Platform
+import com.driverprofit.data.DayEntry
+import com.driverprofit.domain.Platform
 import java.io.File
 import java.time.LocalDate
 import java.util.Locale

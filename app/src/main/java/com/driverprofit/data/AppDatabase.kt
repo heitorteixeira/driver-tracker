@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.data
+package com.driverprofit.data
 
 import android.content.Context
 import androidx.room.Database

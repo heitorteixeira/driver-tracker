@@ -1,10 +1,10 @@
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.stringResource
-import com.heitor.driverprofit.R
+import com.driverprofit.R
 import java.text.NumberFormat
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter

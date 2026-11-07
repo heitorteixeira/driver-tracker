@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

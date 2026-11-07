@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.domain
+package com.driverprofit.domain
 
 enum class Verdict { GREEN, YELLOW, RED }
 

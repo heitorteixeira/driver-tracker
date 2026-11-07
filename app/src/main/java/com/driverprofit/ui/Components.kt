@@ -1,4 +1,4 @@
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box

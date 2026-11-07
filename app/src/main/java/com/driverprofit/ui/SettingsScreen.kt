@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.heitor.driverprofit.ui
+package com.driverprofit.ui
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.Arrangement
@@ -25,9 +25,9 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.os.LocaleListCompat
-import com.heitor.driverprofit.R
-import com.heitor.driverprofit.data.Settings
-import com.heitor.driverprofit.domain.CostProfile
+import com.driverprofit.R
+import com.driverprofit.data.Settings
+import com.driverprofit.domain.CostProfile
 import java.util.Currency
 
 internal val CURRENCIES = listOf(
